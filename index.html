@@ -1,0 +1,666 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Convertisseur</title>
+         <meta charset="utf-8">
+         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="assets/css/main.css">
+         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		 <link rel="stylesheet" href="assets/css/nouvelle.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+		
+    </head>
+
+<body id="top">
+	<section id="banner" ><div class="inner">
+		<header>
+			<h1>Convertisseur</h1>
+			<p>convertisseur d'unités<br>				
+		</header>
+		<a href="#main" class="more">Learn More</a>
+		</div>
+	</section>
+
+<div id="main">
+	<div class="inner">
+        <div class="thumbnails">
+			  <!-- premier box -->
+	       <div class="box">
+			<a  class="image fit">
+				<img src="images/calc.png" alt="image"></a>
+			<div class="inner">
+				<h3>Longueur </h3><br/>
+	<button class="btn" type="button" onclick="afficherModal()">
+		<strong>Commencer</strong>
+		<div id="container-stars">
+		  <div id="stars"></div>
+		</div>
+		<div id="glow">
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		</div>
+	  </button>
+				</div>
+			</div>
+			<!-- fin de box -->
+
+		    <!-- dexieme box -->
+	<div class="box">
+		<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
+			<img src="images/calculator.jpg" alt="" width="600" height="338"></a>
+		<div class="inner">
+			<h3>Poids/Masse</h3>
+			<button class="btn" type="button" onclick="afficherModal1()">
+				<strong>Commencer</strong>
+				<div id="container-stars">
+				  <div id="stars"></div>
+				</div>
+			  
+				<div id="glow">
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				</div>
+			  </button>
+				</div>
+	              </div>
+				  <!-- fin de box -->
+	<!-- 3eme box -->
+	<div class="box">
+		<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
+			<img src="images/mathematics.jpg" alt="" width="300" height="200"></a>
+		<div class="inner">
+		<h3>Volume </h3>
+		<button class="btn" type="button" onclick="afficherModal2()">
+			<strong>Commencer</strong>
+			<div id="container-stars">
+			  <div id="stars"></div>
+			</div>
+		  
+			<div id="glow">
+			  <div class="circle"></div>
+			  <div class="circle"></div>
+			</div>
+		  </button>
+	        </div>
+	     	</div>
+     <!-- fin de box -->
+<div class="box">
+	<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
+		<img src="images/learn.jpg" alt="" width="600" height="338"></a>
+	<div class="inner">
+		<h3>Température</h3>
+		<button class="btn" type="button" onclick="afficherModal3()">
+			<strong>Commencer</strong>
+			<div id="container-stars">
+			  <div id="stars"></div>
+			</div>
+		  
+			<div id="glow">
+			  <div class="circle"></div>
+			  <div class="circle"></div>
+			</div>
+		  </button>
+	</div>
+		</div>
+       <!-- fin de box -->
+<div class="box">
+	<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
+		<img src="images/laptop.jpg" alt="" width="600" height="338"></a>
+	<div class="inner">
+		<h3>Vitesse</h3>
+		<button class="btn" type="button" onclick="afficherModal4()">
+			<strong>Commencer</strong>
+			<div id="container-stars">
+			  <div id="stars"></div>
+			</div>
+		  
+			<div id="glow">
+			  <div class="circle"></div>
+			  <div class="circle"></div>
+			</div>
+		  </button>
+	</div>
+</div>
+         <!-- fin de box -->
+	<div class="box">
+		<a href="https://youtu.be/s6zR2T9vn2c" class="image fit">
+			<img src="images/saving.jpg" alt="" width="600" height="538"></a>
+		<div class="inner">
+			<h3>Devise</h3>
+			<br/><br/>
+			<button class="btn" type="button" onclick="afficherModal5()">
+				<strong>Commencer</strong>
+				<div id="container-stars">
+				  <div id="stars"></div>
+				</div>
+			  
+				<div id="glow">
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				</div>
+			  </button>
+		</div>
+	</div>
+	   <!-- fin de box -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   	
+			<!-- modal box1 -->
+	<div id="modal">
+		<div id="modal-content">
+		 <div id="modal-close" onclick="fermerModal()">
+			 <button class="relative border-2 border-black group hover:border-blue-500 w-12 h-12 duration-500 overflow-hidden" type="button">
+				 <p class="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+					 ×
+				 </p>
+
+			 </button>
+		 </div>
+			 <p class="para">Longueur</p>
+ <div class="div1">
+	  <div class="divv1">
+	   <input type="text" id="input1">
+	   <select class="form-control"  id="unit1">
+		 <option value="">-- choix --</option>
+		 <option value="1">KM</option>
+		 <option value="2">m</option>
+		 <option value="3">dm</option>
+		 <option value="4">cm</option>
+		 <option value="5">mm</option>
+	 </select>	
+  </div><br/>
+  <div class="divv5">
+	  <input type="text" id="input2" readonly>
+	  <select class="form-control"  id="unit2">
+		 <option value="">-- choix --</option>
+		 <option value="1">KM</option>
+		 <option value="2">m</option>
+		 <option value="3">dm</option>
+		 <option value="4">cm</option>
+		 <option value="5">mm</option>
+	 </select>
+  </div>     
+		 </div><br/>
+		    
+    <button class="btne" onclick="convertirLangueur()">
+        <div class="wrapper">
+            <p class="text"> Valider </p>
+    
+            <div class="flower flower1">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower2">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower3">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower4">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower5">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower6">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+        </div>
+    </button>
+													
+		 </div>
+	 </div>
+				<!-- modal box2 -->
+	<div id="modal1">
+	 <div id="modal1-content">
+	  <div id="modal1-close" onclick="fermerModal1()">
+		  <button class="relative border-2 border-black group hover:border-blue-500 w-12 h-12 duration-500 overflow-hidden" type="button">
+			  <p class="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+				  ×
+			  </p>
+		  </button>
+	  </div>
+		  <p class="para">masse</p>
+		  <div class="div1">
+	  <div class="divv1">
+		<input type="text" id="input11">
+		<select class="form-control"  id="unit11">
+		  <option value="">-- choix --</option>
+		  <option value="1">Kg</option>
+		  <option value="2">g</option>
+		  <option value="3">dg</option>
+		  <option value="4">cg</option>
+		  <option value="5">mg</option>
+	  </select>	
+	  </div><br/>
+	  <div class="divv5">
+	   <input type="text" id="input22" readonly>
+	   <select class="form-control"  id="unit22">
+		  <option value="">-- choix --</option>
+		  <option value="1">Kg</option>
+		  <option value="2">g</option>
+		  <option value="3">dg</option>
+		  <option value="4">cg</option>
+		  <option value="5">mg</option>
+	  </select>
+			   </div>     
+		  </div><br/>
+		    
+    <button class="btne" onclick="convertirMasse()">
+        <div class="wrapper">
+            <p class="text">Valider </p>
+    
+            <div class="flower flower1">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower2">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower3">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower4">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower5">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower6">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+        </div>
+    </button>								
+		  </div>
+	  </div>
+		  <!-- modal3 -->
+	 <div id="modal2">
+	 <div id="modal2-content">
+	  <div id="modal2-close" onclick="fermerModal2()">
+		  <button class="relative border-2 border-black group hover:border-blue-500 w-12 h-12 duration-500 overflow-hidden" type="button">
+			  <p class="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+				  ×
+			  </p>
+
+		  </button>
+	  </div>
+		  <p class="para">Volume</p>
+	  <div class="div1">
+	  <div class="divv1">
+		<input type="text" id="inp1">
+		<select class="form-control"  id="un1">
+		  <option value="">-- choix --</option>
+		  <option value="1">Litre (L)</option>
+		  <option value="2">Millilitre (mL)</option>
+		  <option value="3">Gallon (gal)</option>
+		  <option value="4">Pinte (pt)</option>
+		  <option value="5">Centimètre cube (cm³)</option>
+	  </select>	
+	  </div><br/>
+	  <div class="divv5">
+	   <input type="text" id="inp2" readonly>
+	   <select class="form-control"  id="un2">
+		  <option value="">-- choix --</option>
+		  <option value="1">Litre (L)</option>
+		  <option value="2">Millilitre (mL)</option>
+		  <option value="3">Gallon (gal)</option>
+		  <option value="4">Pinte (pt)</option>
+		  <option value="5">Centimètre cube (cm³)</option>
+	  </select>
+		   </div>     
+	  </div><br/>
+	   
+	  <button class="btne" onclick="convertirVolume()">
+        <div class="wrapper">
+            <p class="text">Valider </p>
+    
+            <div class="flower flower1">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower2">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower3">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower4">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower5">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower6">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+        </div>
+    </button>									
+	  </div>
+	 </div>
+	   <!-- modal4 -->
+	   <div id="modal3">
+ <div id="modal3-content">
+  <div id="modal3-close" onclick="fermerModal3()">
+	  <button class="relative border-2 border-black group hover:border-blue-500 w-12 h-12 duration-500 overflow-hidden" type="button">
+		  <p class="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+			  ×
+		  </p>
+
+	  </button>
+  </div>
+	  <p class="para">Température</p>
+	 <div class="div1">
+	   <div class="divv1">
+			<input type="text" id="inp11">
+			<select class="form-control"  id="uni11">
+			  <option value="">-- choix --</option>
+			  <option value="1">Celsius (°C)</option>
+			  <option value="2">Fahrenheit (°F)</option>
+			  <option value="3">Kelvin (K)</option>
+			 
+		  </select>	
+	   </div><br/>
+	   <div class="divv5">
+		   <input type="text" id="inp22" readonly>
+		   <select class="form-control"  id="uni22">
+			  <option value="">-- choix --</option>
+			  <option value="1">Celsius (°C)</option>
+			  <option value="2">Fahrenheit (°F)</option>
+			  <option value="3">Kelvin (K)</option>
+		  </select>
+	   </div>     
+	 </div><br/>
+	    
+    <button class="btne" onclick="convertirTemperature()">
+        <div class="wrapper">
+            <p class="text">Valider </p>
+    
+            <div class="flower flower1">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower2">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower3">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower4">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower5">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower6">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+        </div>
+    </button>								
+	 </div>
+	 </div>
+	 <!-- modal5 -->
+	 <div id="modal4">
+		 <div id="modal4-content">
+		  <div id="modal4-close" onclick="fermerModal4()">
+			  <button class="relative border-2 border-black group hover:border-blue-500 w-12 h-12 duration-500 overflow-hidden" type="button">
+				  <p class="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+					  ×
+				  </p>
+			  </button>
+		  </div>
+			  <p class="para"> vitesse</p>
+	 <div class="div1">
+	   <div class="divv1">
+			<input type="text" id="inputv1">
+			<select class="form-control"  id="unitv1">
+			  <option value="">-- choix --</option>
+			  <option value="1"> (km/h)</option>
+			  <option value="2">(m/s)</option>
+			  <option value="3">(mph)</option>
+			  <option value="4">(kt)</option>
+		  </select>	
+	   </div><br/>
+	   <div class="divv5">
+		   <input type="text" id="inputv2" readonly>
+		   <select class="form-control"  id="unitv2">
+			  <option value="">-- choix --</option>
+			  <option value="1"> (km/h)</option>
+			  <option value="2">(m/s)</option>
+			  <option value="3">(mph)</option>
+			  <option value="4">(kt)</option>
+		  </select>
+	   </div>     
+	 </div><br/>
+	    
+    <button class="btne" onclick="convertirVitesse()">
+        <div class="wrapper">
+            <p class="text">Valider </p>
+    
+            <div class="flower flower1">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower2">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower3">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower4">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower5">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower6">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+        </div>
+    </button>									
+	 </div>
+	 </div>
+		<!-- modal6 -->
+		<div id="modal5">
+		 <div id="modal5-content">
+		  <div id="modal5-close" onclick="fermerModal5()">
+			  <button class="relative border-2 border-black group hover:border-blue-500 w-12 h-12 duration-500 overflow-hidden" type="button">
+				  <p class="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+					  ×
+				  </p>
+			  </button>
+		  </div>
+			  <p class="para">Devise</p>
+	 <div class="div1">
+	   <div class="divv1">
+			<input type="text" id="inputd1">
+			<select class="form-control"  id="unitd1">
+			  <option value="">-- choix --</option>
+			  <option value="1">USD</option>
+			  <option value="2">EUR</option>
+			  <option value="3">GBP</option>
+			  <option value="4">CAD</option>
+			  <option value="5">DHS</option>
+		  </select>	
+	   </div><br/>
+	   <div class="divv5">
+		   <input type="text" id="inputd2" readonly>
+		   <select class="form-control"  id="unitd2">
+			  <option value="">-- choix --</option>
+			  <option value="1">USD</option>
+			  <option value="2">EUR</option>
+			  <option value="3">GBP</option>
+			  <option value="4">CAD</option>
+			  <option value="5">DHS</option>
+		  </select>
+	   </div>     
+	 </div><br/>
+	      
+    <button class="btne" onclick="convertirDevise()">
+        <div class="wrapper">
+            <p class="text">Valider</p>
+    
+            <div class="flower flower1">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower2">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower3">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower4">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower5">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+            <div class="flower flower6">
+                <div class="petal one"></div>
+                <div class="petal two"></div>
+                <div class="petal three"></div>
+                <div class="petal four"></div>
+            </div>
+        </div>
+    </button>									
+	 </div>
+	 </div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/new.js"></script>
+		</body>
+		    </html>
